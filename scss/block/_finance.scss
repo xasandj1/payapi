@@ -1,0 +1,68 @@
+.finance {
+    margin-top: 46px;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        @media screen and (max-width:700px) {
+            flex-wrap: wrap;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__blog {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 32px;
+        @media screen and (max-width:768px) {
+            margin-top: 32px;
+        }
+    }
+
+    &__title {
+        color: #36536B;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 25px;
+        letter-spacing: -0.138px;
+    }
+
+    &__txt {
+        color: #6C8294;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 25px;
+        letter-spacing: -0.115px;
+        max-width: 350px;
+        width: 100%;
+        text-align: center;
+
+        @media screen and (max-width: 768px) {
+            max-width: 223px;
+            width: 100%;
+        }
+    }
+
+    &__img {
+        @media screen and (max-width:768px) {
+            width: 88px;
+            height: 88px;
+        }
+
+        @media screen and (max-width: 425px) {
+            width: 106px;
+            height: 106px;
+        }
+    }
+}

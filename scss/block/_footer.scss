@@ -1,0 +1,40 @@
+.footer {
+    background: #1B262F;
+    padding: 31px 0;
+    &__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media screen and (max-width:426px) {
+            flex-direction: column;
+        }
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        @media screen and (max-width:426px) {
+            flex-direction: column;
+            margin: 30px 0;
+        }
+    }
+
+    &__item {
+        color: #FBFCFE;
+        font-size: 15px;
+        font-weight: 700;
+    }
+    &__logo{
+        display: flex;
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+    &__none{
+        display: none;
+        @media screen and (max-width: 768px) {
+            display: flex;
+        }
+    }
+}

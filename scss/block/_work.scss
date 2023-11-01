@@ -2,8 +2,37 @@
     background: #1B262F;
     padding: 100px 0;
     position: relative;
+    margin-top: 100px;
+
+    @media screen and (max-width: 500px) {
+        padding: 50px 0;
+
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media screen and (max-width:768px) {
+            flex-direction: column-reverse;
+        }
+    }
 
     &__left {
+        @media screen and (max-width:768px) {
+            margin-top: 50px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        @media screen and (max-width: 500px) {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
         &::after {
             content: "";
             background: url(../img/workshape.svg) no-repeat;
@@ -14,6 +43,34 @@
             left: 0;
             width: 582px;
             height: 453px;
+
+            @media screen and (max-width:768px) {
+                background: url(../img/workmiddle.svg) no-repeat;
+                width: 750px;
+                height: 235px;
+
+            }
+
+            @media screen and (max-width: 500px) {
+                background: url(../img/workmiddle.svg) no-repeat;
+                width: 562px;
+                height: 264px;
+                left: -32%;
+            }
+
+            @media screen and (max-width: 425px) {
+                width: 560px;
+                height: 258px;
+                left: -49%;
+            }
+            @media screen and (max-width: 400px) {
+                width: 556px;
+            }
+            @media screen and (max-width: 320px) {
+                width: 542px;
+                left: -70%;
+                
+            }
         }
     }
 
@@ -39,5 +96,22 @@
         display: inline-block;
         padding: 16px 32px;
         margin-top: 48px;
+    }
+
+    &__right {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 60px;
+        vertical-align: middle;
+        position: relative;
+
+        @media screen and (max-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    &__img{
+        @media screen and (max-width: 400px) {
+            width: 100px;
+        }
     }
 }

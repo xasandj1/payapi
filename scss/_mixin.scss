@@ -14,6 +14,11 @@
         background-color: $pink;
 
     }
+    @media screen and (max-width:425px) {
+        position: relative;
+        margin-top: 16px;
+        width: 100%;
+    }
 }
 
 @mixin hero__title {
@@ -23,6 +28,9 @@
     font-weight: 400;
     line-height: 56px;
     letter-spacing: -0.369px;
+    @media screen and (max-width:500px) {
+        font-size: 32px;
+    }
 }
 
 @mixin hero__txt {
@@ -32,6 +40,12 @@
     line-height: 28px;
     max-width: 445px;
     width: 100%;
+    @media screen and (max-width:768px) {
+        text-align: center;
+    }
+    @media screen and (max-width:500px) {
+        text-align: center;
+    }
 }
 
 @mixin section__title {
@@ -41,6 +55,12 @@
     font-weight: 400;
     line-height: 56px;
     letter-spacing: -0.369px;
+    @media screen and (max-width:768px) {
+        text-align: center;
+    }
+    @media screen and (max-width:500px) {
+        text-align: center;
+    }
 }
 
 @mixin section__txt {
@@ -50,4 +70,12 @@
     line-height: 28px;
     max-width: 445px;
     width: 100%;
+    @media screen and (max-width:768px) {
+        text-align: center;
+        max-width: 573px;
+        width: 100%;
+    }
+    @media screen and (max-width:500px) {
+        text-align: center;
+    }
 }
