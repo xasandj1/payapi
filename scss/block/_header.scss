@@ -1,0 +1,59 @@
+.header {
+    padding: 40px 0;
+    position: relative;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        margin-right: 32px;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    &__item {
+        color: $primary;
+        font-size: 15px;
+        font-weight: 700;
+        transition: .3S;
+
+        &:hover{
+            color: $gray;
+        }
+    }
+
+    &__btn {
+        @include btn;
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+    &__menu{
+        display: none;
+        @media screen and (max-width: 768px) {
+            display: flex;
+        }
+
+    }
+}
+.menu{
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+}
+.none{
+    display: none;
+    @media screen and (max-width: 768px) {
+        display: flex;
+    }
+}

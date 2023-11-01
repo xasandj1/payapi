@@ -1,0 +1,170 @@
+.hero {
+    margin-top: 80px;
+
+    @media screen and (max-width: 768px) {
+        margin-top: 60px;
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media screen and (max-width: 768px) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &__title {
+        color: #36536B;
+        font-family: $fontdmsserif;
+        font-size: 72px;
+        font-weight: 400;
+        line-height: 72px;
+        letter-spacing: -0.554px;
+        max-width: 546px;
+        width: 100%;
+
+        @media screen and (max-width: 500px) {
+            font-size: 20px;
+            text-align: center;
+            margin-top: 49px;
+        }
+        
+        @media screen and (max-width: 768px) {
+            font-size: 40px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            margin-top: 49px;
+            line-height: 40px;
+        }
+    }
+
+    &__left {
+        @media screen and (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__blog {
+        margin-top: 21px;
+        max-width: 445px;
+        width: 100%;
+        position: relative;
+
+        @media screen and (max-width: 768px) {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 25px;
+        }
+    }
+
+    &__input {
+        border-radius: 24px;
+        background: #FBFCFE;
+        border: 1px solid $gray;
+        box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+        outline-color: $pink;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 21px;
+        color: $primary;
+        width: 100%;
+        font-size: 15px;
+        font-weight: 700;
+        text-transform: capitalize;
+
+        &::placeholder {
+            color: $gray;
+        }
+    }
+
+    &__link {
+        color: $gray;
+        font-size: 15px;
+        font-weight: 400;
+        display: inline-block;
+        margin-top: 16px;
+        margin-left: 27px;
+    }
+
+    &__btn {
+        @include btn;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    &__img {
+        @media screen and (max-width: 375px) {
+            width: 127px;
+            height: 240px;
+        }
+
+        @media screen and (max-width: 425px) {
+            width: 140px;
+            height: 280px;
+        }
+        @media screen and (max-width: 470px) {
+                width: 170px;
+                height: 310px;
+        }
+    }
+
+    &__right {
+        &::after {
+            content: "";
+            background: url(../img/phoneshape.svg) no-repeat;
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+            width: 675px;
+            height: 640px;
+            top: 0;
+            right: 0;
+            z-index: -1;
+
+            @media screen and (max-width: 768px) {
+                background: url(../img/mediumshape.svg) no-repeat;
+                background-position: center;
+                background-size: cover;
+                height: 281px;
+                width: 767px;
+            }
+
+            @media screen and (max-width: 375px) {
+                height: 266px;
+                width: 340px;
+            }
+
+            @media screen and (max-width: 630px) {
+                height: 266px;
+                width: 640px;
+            }
+            @media screen and (max-width: 470px) {
+                height: 266px;
+                width: 505px;
+            }
+            @media screen and (max-width: 500px) {
+                height: 266px;
+                width: 445px;
+            }
+            @media screen and (max-width: 320px) {
+                height: 266px;
+                width: 340px;
+            }
+        }
+    }
+}
+
+.link {
+    color: #6C8294;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration-line: underline;
+    margin-left: 5px;
+}
