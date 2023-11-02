@@ -278,8 +278,10 @@ button {
   width: 100%;
   position: relative;
 }
-.hero__blog:nth-child(2) {
-  margin-top: unset;
+@media screen and (max-width: 426px) {
+  .hero__blog:nth-child(2) {
+    margin-top: unset;
+  }
 }
 @media screen and (max-width: 768px) {
   .hero__blog {

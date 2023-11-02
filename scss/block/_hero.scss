@@ -56,7 +56,9 @@
         position: relative;
 
         &:nth-child(2) {
-            margin-top: unset;
+            @media screen and (max-width:426px) {
+                margin-top: unset;
+            }
         }
 
         @media screen and (max-width: 768px) {
