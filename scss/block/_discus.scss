@@ -1,0 +1,21 @@
+.discus {
+    margin-top: 70px;
+    background: url(../img/bussines.svg) no-repeat center/cover;
+    min-height: 500px;
+
+    @media screen and (max-width: 769px) {
+        background: url(../img/bussinesmiddle.svg) no-repeat center/cover;
+        min-height: 270px;
+
+    }
+    @media screen and (max-width: 426px) {
+        background: url(../img/bussinesmiddle.svg) no-repeat center/cover;
+        min-height: 190px;
+
+    }
+    @media screen and (max-width: 376px) {
+        background: url(../img/bussinesmiddle.svg) no-repeat center/cover;
+        min-height: 150px;
+
+    }
+}
